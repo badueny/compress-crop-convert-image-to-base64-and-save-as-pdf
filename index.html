@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en"	>
+<head>
+<title>Compress Crop and Convert Image to Base64 and Save All as small PDF</title>
+<meta name="theme-color" content="#6610f2">
+<link rel="shortcut icon" href="https://bitdev.id/assets/img/fav-bitdev.png?1676571647" type="image/x-icon">
+<meta name="description" content="Compress, Crop and Convert Image to Base64 and Save All as PDF">
+<meta name="author" content="4113N">
+<meta name="keywords" content="Compress image,crop image,generator pdf,pdf,png,jpg,base64">
+<meta name="charset" content="UTF-8">  
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="ted-globalmode" content="light">
+<link rel="stylesheet" href="libs/material.min (1).css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="libs/TeDlert.css">
+<link rel="stylesheet" href="libs/cropper.min.css">
+<script src="libs/jspdf.umd.min.js"></script>
+<link rel="stylesheet" href="libs/ghmdsindre.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="desktop.css" media="screen and (min-width:900px)">	
+<link rel="shortcut icon" href="https://bitdev.id/assets/img/fav-bitdev.png?1676571647" type="image/x-icon">
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+</head>
+<body class="light">
+    <div class="loader box">
+        <div class="mdl-spinner mdl-js-spinner is-active" style="margin:auto;width:50px; height:50px;"></div>
+    </div>
+    <div class="app" style="text-align: -webkit-center;">
+        <div class="menu-nav-bar">
+            <button onclick="navigate(this,syncCreatePage);" class="crtopen mdl-button mdl-js-button mdl-js-ripple-effect pg-but active-tab" data-src="pages/create.stackformal" id="pdf-create">
+               Create New
+            </button>
+        </div>
+        <small>Compress, Crop and Convert Image to Base64 and Save All as small size PDF</small>
+        <progress id="progress" value="0" max="100" style="width:50vw"></progress>
+        <div class='page box'></div>
+        <div class="footer">Base Code and Pdf Generator By <a href="https://github.com/NotableApp/Formal-stack-pdfs">NotableApp</a> Additional Fiture By <a href="https://github.com/badueny/compress-image-and-save-as-pdf">Badueny</a></div>
+    </div>
+    <div id="toast" class="mdl-js-snackbar mdl-snackbar">
+      <div class="mdl-snackbar__text"></div>
+      <button class="mdl-snackbar__action" type="button"></button>
+    </div>
+    <script src="libs/material.min.js"></script>
+    <script src="ui.js"></script>
+    <script src="libs/TeDlertmain.js"></script>
+    <script src="libs/compress-image.js"></script>
+    <script src="create.min.js"></script>
+    <script src="libs/cropper.min.js"></script>
+    <script src="libs/sd.js"></script>
+    <script src="temp.js"></script>
+</body>
+</html>
