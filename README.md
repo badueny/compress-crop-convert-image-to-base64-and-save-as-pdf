@@ -21,6 +21,9 @@
 - [CompressJs] - library that compresses png and jpeg images to smaller jpeg images.
 - [jQuery] - jQuery JavaScript Library
 
+## Learn All About Base64
+- [base64.guru] - A virtual teacher who reveals to you the great secrets of Base64
+
 ## Basecode APP
 - [NotableApp] - Make pdf from image , markdown and more
 
@@ -32,3 +35,4 @@
  [CompressJs]: <https://github.com/kayslay/CompressJs>
  [jQuery]: <https://releases.jquery.com/>
  [NotableApp]:<https://github.com/NotableApp/Formal-stack-pdfs>
+ [base64.guru]: <https://base64.guru/>
