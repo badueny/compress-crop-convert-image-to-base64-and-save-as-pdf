@@ -12,5 +12,18 @@
 ## Demo 
 [demo] - https://c3bp.bitdev.id
 
+## Libraries
+- [Material] - Material design lite!
+- [Cropper.js] - Images are cropped with cropper.js
+- [jsPDF] - Pdfs are rendered by jsPDF
+- [Boosted Alerts] - Alerts are shown with Boosted alerts.
+- [CompressJs] - library that compresses png and jpeg images to smaller jpeg images.
+- [jQuery] - jQuery JavaScript Library
 
  [demo]: <https://c3bp.bitdev.id>
+ [Material]: <https://getmdl.io/>
+ [Cropper.js]: <https://fengyuanchen.github.io/cropperjs/>
+ [jsPDF]: <https://mrrio.github.io/jsPDF/>
+ [Boosted Alerts]: <https://github.com/NotableApp/Alert/>
+ [CompressJs]: <https://github.com/kayslay/CompressJs>
+ [jQuery]: <https://releases.jquery.com/>
