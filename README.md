@@ -5,6 +5,7 @@
 - Compress Image
 - Convert Image to Base64
 - Croping Image
+- Copy DATA URI Base64 Image
 - Save All Image as PDF (Small Size PDF File)
 - Client Side (File Not Saved at server)
 - Download Compressed Image
