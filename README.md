@@ -1,5 +1,5 @@
 # Compress, Crop and Convert Image to Base64 and Save All as PDF
-> Compressing, Croping and Convert Image to Base64 and Save All as small size PDF
+> Compressing, Cropping and Convert Image to Base64 and Save All as small size PDF
 
 ## Features
 - Compress Image
