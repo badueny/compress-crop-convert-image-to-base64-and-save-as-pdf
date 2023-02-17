@@ -1,12 +1,12 @@
 # Compress, Crop and Convert Image to Base64 and Save All as PDF
-> Compressing, Cropping and Convert Image to Base64 and Save All as small size PDF
+> Compressing, Cropping and Convert Image to Base64 and Save All as PDF
 
 ## Features
 - Compress Image
 - Convert Image to Base64
 - Croping Image
 - Copy DATA URI Base64 Image
-- Save All Image as PDF (Small Size PDF File)
+- Save All Image as PDF
 - Client Side (File Not Saved at server)
 - Download Compressed Image
 
