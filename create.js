@@ -1,7 +1,7 @@
 $make = str => document.createElement(str)
 var pdfPages = [];
 var watermark='';
-
+var oriSize=0, compSize=0;
 function addPdfPage(index, page) {
 
 	var impl = $make("div");
@@ -25,7 +25,8 @@ function addPdfPage(index, page) {
 	' <button class="btn-crop" onclick="cropperImg('+index+')">Crop</button> '+
 	'<a class="btn-downld" href="'+page+'" download="compress-img-'+index+'.png">Download</a>'+
 	'<input type="hidden" value="'+page+'" id="imgBase64'+index+'"/>'+
-	' <button class="btn-b64" onclick="copyBase64('+index+')">Copy Base64 Img</button> ';
+	' <button class="btn-b64" onclick="copyBase64('+index+')">Copy Base64 Img</button> '+
+		'<br><small style="color: white;background-color: #032121;font-size: 0.7em;">'+oriSize+' | '+compSize+'</small> ';
 
 	$("#caller_to_cam").remove();
 	$("#tray_for_pgs").append(impl);
@@ -79,7 +80,8 @@ function syncCreatePage() {
 		'<button class="btn-crop" onclick="cropperImg('+index+')">Crop</button>'+
 		'<a href="'+page.src+'" class="btn-downld" download="compress-img-'+index+'.png">Download</a>'+
 		'<input type="hidden" value="'+page.src+'" id="imgBase64'+index+'"/>'+
-		' <button class="btn-b64" onclick="copyBase64('+index+')">Copy Base64 Img</button> ';
+		' <button class="btn-b64" onclick="copyBase64('+index+')">Copy Base64 Img</button> '+
+		'<br><small style="color: white;background-color: #032121;font-size: 0.7em;">'+oriSize+' | '+compSize+'</small> ';
 
 		$("#caller_to_cam").remove();
 		$("#tray_for_pgs").append(impl);
@@ -101,8 +103,15 @@ function uploader(elem) {
 	Object.values(elem.files).forEach(file => {		
 		var reader = new FileReader();
 		reader.onloadend = function() {
+		    var size = file.size / 1024000;
+		    oriSize = size.toFixed(2);
+		    oriSize = 'Original Size: '+oriSize+'Mb';
 			if (reader.result.includes("image/png") || reader.result.includes("image/jpg") || reader.result.includes("image/jpeg")) {
 				compressImage(file,function(a){
+				    var stringLength = a.length - 'data:image/png;base64,'.length;
+                    var sizeInBytes = 4 * Math.ceil((stringLength / 3))*0.5624896334383812;
+                    var sizeInKb = sizeInBytes/1000;
+                    compSize = 'Compressed Size: '+(sizeInKb/1024).toFixed(2)+'Mb';
 					addPdfPage(ind, a);
 					document.getElementById("progress").value = 0;
 					ind++;

@@ -140,6 +140,7 @@ border-radius:5px;
 	font-weight: 600;
 	padding: 2px 8px;
 	margin:5px;
+	cursor: no-drop;
 }
 .btn-crop{
 	background-color: dodgerblue;
@@ -148,6 +149,7 @@ border-radius:5px;
 	border-radius: 5px;
 	border: none;
 	padding: 2px 8px;
+	cursor: zoom-in;
 }
 
 .btn-downld{
@@ -170,11 +172,13 @@ border-radius:5px;
 	width: 100px;
 	color: whitesmoke;
 	border: none;
+	cursor: pointer;
 }
 .btn-b64{
 	border-radius: 5px;
 	border: 1px solid;
 	margin-left: 4px;
+	cursor: copy;
 }
 .footer{
 	margin-bottom: 10px;
